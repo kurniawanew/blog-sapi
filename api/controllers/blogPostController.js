@@ -7,7 +7,7 @@ exports.getAllArticle = function(req, res) {
     Article.find({}, function(err, article) {
         if (err)
             res.send(err);
-        es.json(article);
+        res.json(article);
     });
 };
 
