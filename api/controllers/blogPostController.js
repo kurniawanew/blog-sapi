@@ -2,7 +2,7 @@
 
 var mongoose = require('mongoose'),
     Article = mongoose.model('Article'),
-    clearKey = require("../../services/cache");
+    { clearKey } = require("../../services/cache");
 
 exports.getAllArticle = async function(req, res) {
     var where = {};
